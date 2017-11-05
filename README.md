@@ -1,10 +1,10 @@
 # pinklog
+[![](https://img.shields.io/badge/rick-approved-ff69b4.svg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+
+![](https://github.com/rdjong/pinklog/raw/master/scrot.png)
 
 Pinklog is a simple pink console logger.
-
-
-
-[![](https://img.shields.io/badge/rick-approved-ff69b4.svg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 Installation
 ------------
