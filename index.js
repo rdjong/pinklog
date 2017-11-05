@@ -8,13 +8,25 @@ pinklog = {
             }
     },
     ob(obj) {
-        console.log(chalk.blue(util.inspect(obj, {showHidden: false, depth: null})));
+        console.log(chalk.bold.blue('[OBJECT] : ')+chalk.blue(util.inspect(obj, {showHidden: false, depth: null})));
     },
     ok(txt) {
-        console.log(chalk.green(txt));
+        console.log(chalk.bold.green('[OK] : ')+chalk.green(txt));
     },
     err(txt) {
-            console.log(chalk.bold.red(txt));
+            console.log(chalk.bold.red('[ERROR] : ')+chalk.red(txt));
+    },
+    if( bool, txt) {
+        if(bool == true || bool == 1){
+            console.log(chalk.bold.green('[TRUE] : ')+chalk.green(txt));
+        }
+        if(bool == false || bool == 0){
+            console.log(chalk.bold.red('[FALSE] : ')+chalk.red(txt));
+        }
+        if(bool != true && bool != false && bool !=1 && bool !=0){
+            console.log(chalk.bold.blue('[NO BOOL] : ')+chalk.blue(txt));
+        }
+
     }
 }
 module.exports = pinklog;
